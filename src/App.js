@@ -10,7 +10,7 @@ const App = () => {
       <header className="App-header">
         <Counter />
         <hr width="600"/>
-        <CounterReducer />
+        <CounterReducer initialCount={0} />
         <hr width="600"/>
       </header>
     </div>
