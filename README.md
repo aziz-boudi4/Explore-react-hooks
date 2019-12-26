@@ -1,3 +1,8 @@
+# Demo for the Counter that uses the useState hook: https://codepen.io/azizCode/pen/wvBeRQB?editors=0010
+
+# Demo for the Counter that uses the useReducer hook:
+https://codepen.io/azizCode/pen/ZEYyVwy?editors=0010
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
