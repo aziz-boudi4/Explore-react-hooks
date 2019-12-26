@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Counter = ({count,setCount,initialCount}) => {
+const Counter = () => {
 
+  const initialCount = 0
+  const [count, setCount] = useState(initialCount)
+
+  useEffect(() => {
+    document.title = `You clicked useState ${count} times`;
+  });
 
   const add = () => {
     setCount(count + 1)

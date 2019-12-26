@@ -1,19 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Counter from './Components/Counter'
+import CounterReducer from './Components/Counter-with-useReducer'
 
 const App = () => {
-  const initialCount = 0
-  const [count, setCount] = useState(initialCount)
-
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
 
   return (
     <div className="App">
       <header className="App-header">
-        <Counter count={count} setCount={setCount} initialCount={initialCount}/>
+        <Counter />
+        <hr width="600"/>
+        <CounterReducer />
         <hr width="600"/>
       </header>
     </div>
