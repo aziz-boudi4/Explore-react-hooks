@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Counter = ({count,setCount}) => {
+const Counter = ({count,setCount,initialCount}) => {
+
 
   const add = () => {
     setCount(count + 1)
@@ -17,6 +18,7 @@ const Counter = ({count,setCount}) => {
       <h2>Counter with Hooks using useState </h2>
       counter result : {count}
       <div>
+        <button className="counterBtn" onClick={() => setCount(initialCount)}>Reset</button>
         <button className="counterBtn" onClick={substract}>-</button>
         <button className="counterBtn" onClick={add}>+</button>
       </div>
