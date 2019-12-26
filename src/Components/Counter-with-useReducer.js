@@ -1,7 +1,5 @@
 import React, { useReducer, useEffect } from 'react';
 
-const initialState = { count : 0};
-
 function reducer(state, action) {
   switch (action.type) {
     case "increment":
@@ -17,6 +15,9 @@ function reducer(state, action) {
       throw new Error();
   }
 }
+
+const initialState = { count : 0};
+
 
 function CounterReducer() {
   const [state, dispatch] = useReducer(reducer, initialState);
