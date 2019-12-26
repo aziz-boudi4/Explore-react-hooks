@@ -3,6 +3,9 @@
 # Demo for the Counter that uses the useReducer hook:
 https://codepen.io/azizCode/pen/ZEYyVwy?editors=0010
 
+# Demo for the Text Input With Focus Button using useRef:
+https://codepen.io/azizCode/pen/qBEjgNL
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
