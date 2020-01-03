@@ -6,6 +6,7 @@ const Counter = () => {
   const [count, setCount] = useState(initialCount)
 
   useEffect(() => {
+    console.log('useEffect Counter triggered')
     document.title = `You clicked useState ${count} times`;
   });
 

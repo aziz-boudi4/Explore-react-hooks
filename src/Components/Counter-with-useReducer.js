@@ -23,8 +23,10 @@ function CounterReducer({initialCount}) {
   const [state, dispatch] = useReducer(reducer, initialCount, init);
 
   useEffect(() => {
+    console.log('useEffect Reducer Counter triggered')
+
     document.title = `You clicked useReducer ${state.count} times`;
-  });
+  },[state.count]);
 
   return (
     <div>
